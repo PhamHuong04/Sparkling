@@ -338,6 +338,7 @@
 .action .content {
   transform: translate(50%, 50%);
   color: var(--s-red);
+  margin-left: 10%;
 }
 
 .action .title {
@@ -376,8 +377,8 @@
     height: 660px;
   }
   .header .content {
-    width: 100%;
-    margin-left: 0;
+    width: 80%;
+    
     text-align: left;
     transform: translate(0, 25%);
   }
@@ -505,7 +506,7 @@
   }
   .testimonials {
     background-image: url("./image/header-sparkling-10 2.png");
-    height: 480px;
+    height: 500px;
     background-size: cover;
   }
   .testimonials .title {
@@ -513,16 +514,60 @@
   }
   .testimonials .discription {
     font-size: 13px;
-    align-items: center;
+    width: 80%;
+    margin: 20px auto;
   }
   .testimonials .review .content {
     max-width: 80%;
-    margin: 0;
+    margin: auto auto;
     font-size: 12px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-weight: 300;
   }
   .testimonials .author {
     max-width: 80%;
+  }
+  .testimonials .review .name {
+    font-size: var(--sparkling-subtit-size);
+    margin: 40px 0 20px;
+  }
+  .subscribe {
+    padding: 50px 0;
+  }
+  .subscribe .title {
+    font-size: var(--font-size-5xl);
+    width: 60%;
+    margin: auto;
+  }
+  .subscribe .form-subscribe input {
+    width: 50%;
+  }
+  .subscribe .form-subscribe .button-subscribe {
+    font-size: 12px;
+    width: 100px;
+    padding: 20px;
+  }
+  .action {
+    background-image: url("./image/pexels-giftpunditscom-1303094 1.png");
+    background-size: cover;
+    height: 307px;
+  }
+  .action .content {
+    text-align: center;
+    transform: translate(0, 25%);
+  }
+  .action .title {
+    width: 80%;
+    font-size: var(--font-size-5xl);
+    margin: auto;
+  }
+  .action .discription {
+    margin-top: 10px;
+  }
+  .action a {
+    margin: 0 30%;
+  }
+  .action .content button {
+    font-size: 16px;
   }
 }
