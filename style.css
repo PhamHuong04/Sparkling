@@ -374,7 +374,7 @@
     background-image: url("./image/Group 231 2.png");
     background-size: 100% auto;
     background-position: top;
-    height: 660px;
+    height: 700px;
   }
   .header .content {
     width: 80%;
@@ -544,7 +544,7 @@
   .subscribe .form-subscribe .button-subscribe {
     font-size: 12px;
     width: 100px;
-    padding: 20px;
+    text-align: center;
   }
   .action {
     background-image: url("./image/pexels-giftpunditscom-1303094 1.png");
