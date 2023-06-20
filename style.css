@@ -128,23 +128,28 @@
 }
 
 .write-holiday {
-  background-image: url("./image/photo-1577029025893-887706608495 1.png");
-  background-size: 55% auto;
-  background-position: right;
-  background-color: var(--s-red);
-  height: 548px;
+  display: flex;
+}
+.write-holiday .image {
+  width: 50%;
 }
 
-.write-holiday .title {
+.write-holiday .content {
+  background-color: var(--s-red);
+  padding: 10% 0 5% 10%;
   color: var(--s-yellow);
+}
+.write-holiday .title {
   font-weight: 700;
   font-size: var(--font-size);
   font-family: var(--font);
   text-transform: none;
+  margin-bottom: 50px;
 }
 
 .write-holiday .discription {
   width: 60%;
+  font-size: 18px;
 }
 
 .sale-up {
@@ -348,8 +353,7 @@
 
 .action a {
   text-decoration: none;
-  width: fit-content;
-  display: block;
+  margin: 0 34%;
 }
 
 .action .content button {
@@ -357,8 +361,106 @@
   color: var(--white);
   font-weight: 600;
   background-color: var(--s-red);
+  width: fit-content;
 }
 
 .action .content button:hover {
   background-color: var(--s-text);
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .header {
+    background-image: url("./image/Group 231 2.png");
+    background-size: 100% auto;
+    background-position: top;
+    height: 660px;
+  }
+  .header .content {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    transform: translate(0, 25%);
+  }
+  .header .title {
+    font-size: var(--font-size-17xl);
+  }
+  .header .discription {
+    font-size: 13px;
+    width: 100%;
+  }
+  .header .content button {
+    padding: 15px 30px;
+    font-size: var(--sparkling-subtit-size);
+  }
+  .benefits {
+    margin: 0 5% 50px 5%;
+  }
+  .benefits .title {
+    font-size: var(--font-size-5xl);
+    margin: 50px 10%;
+  }
+  .benefits .benefits1 {
+    border-radius: 30px;
+    width: 108px;
+    height: 109px;
+    margin-left: 10px;
+  }
+  .benefits .benefits1:first-child {
+    margin-left: 0;
+  }
+  .benefits .benefits1 .icon img {
+    width: 56px;
+  }
+  .benefits .benefit-list .title {
+    font-size: 14px;
+  }
+  .benefits .benefit-list .content {
+    width: 70%;
+    margin-left: 0;
+  }
+  .time {
+    background-image: url("./image/jeshoots-com-7VOyZ0-iO0o-unsplash 1.png");
+    background-size: 100%;
+    height: 324px;
+    background-size: cover;
+  }
+  .time .content {
+    transform: translate(0, 50%);
+  }
+  .time .content .title {
+    font-size: var(--font-size-5xl);
+  }
+  .time .box {
+    width: 74px;
+    height: 74px;
+    margin: 20px auto 0;
+  }
+  .time .box .number {
+    font-size: var(--font-size-5xl);
+  }
+  .time .box .text {
+    font-size: 12px;
+  }
+  .write-holiday {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .write-holiday .image {
+    width: 100%;
+    height: fit-content;
+  }
+  .write-holiday .image img {
+    width: 100%;
+  }
+  .write-holiday .content {
+    padding: 5%;
+  }
+  .write-holiday .discription {
+    width: 100%;
+    font-size: 13px;
+  }
+  .write-holiday .title {
+    font-size: var(--font-size-5xl);
+  }
 }
