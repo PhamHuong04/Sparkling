@@ -378,7 +378,6 @@
   }
   .header .content {
     width: 80%;
-    
     text-align: left;
     transform: translate(0, 25%);
   }
@@ -550,7 +549,7 @@
   .action {
     background-image: url("./image/pexels-giftpunditscom-1303094 1.png");
     background-size: cover;
-    height: 307px;
+    height: 310px;
   }
   .action .content {
     text-align: center;
@@ -562,7 +561,7 @@
     margin: auto;
   }
   .action .discription {
-    margin-top: 10px;
+    margin: 10px 0 20px;
   }
   .action a {
     margin: 0 30%;
