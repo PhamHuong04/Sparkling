@@ -262,7 +262,6 @@
 .testimonials .review .content {
   max-width: 40%;
   margin: 0 30% 30px;
-  font-size: var();
   font-size: 14px;
 }
 
@@ -462,5 +461,68 @@
   }
   .write-holiday .title {
     font-size: var(--font-size-5xl);
+  }
+  .sale-up {
+    padding: 0 5%;
+  }
+
+  .sale-up .sale {
+    font-size: 14px;
+    padding-top: 50px;
+  }
+  .sale-up .collection {
+    font-size: var(--font-size-5xl);
+    margin-bottom: 30px;
+  }
+  .sale-up .product {
+    width: 103px;
+    margin: 30px 15px 30px;
+  }
+  .sale-up .image img {
+    width: 118.44px;
+    height: 159.14px;
+  }
+  .sale-up .gifts {
+    margin: 0;
+  }
+  .sale-up .gifts .title {
+    font-size: 22px;
+  }
+  .sale-up .image {
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .sale-up .infor .name {
+    font-size: 14px;
+  }
+  .sale-up .price {
+    font-size: 14px;
+  }
+  .sale-up .buy button {
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 12px;
+  }
+  .testimonials {
+    background-image: url("./image/header-sparkling-10 2.png");
+    height: 480px;
+    background-size: cover;
+  }
+  .testimonials .title {
+    font-size: var(--font-size-5xl);
+  }
+  .testimonials .discription {
+    font-size: 13px;
+    align-items: center;
+  }
+  .testimonials .review .content {
+    max-width: 80%;
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  .testimonials .author {
+    max-width: 80%;
   }
 }
