@@ -26,7 +26,8 @@
   width: 70%;
   margin: 40px 0 60px 0;
 }
-.header .content button {
+.header .content a {
+  text-decoration: none;
   background-color: var(--s-yellow);
   padding: 15px 50px;
   border: none;
@@ -37,7 +38,7 @@
   color: var(--s-red);
   border-radius: 40px;
 }
-.header .content button:hover {
+.header .content a:hover {
   background-color: var(--s-text);
   color: var(--white);
 }
@@ -210,7 +211,7 @@
   display: flex;
   font-size: var(--font-size-xl);
   justify-content: center;
-  margin: 10px 0 20px;
+  margin: 10px 0 40px;
 }
 
 .sale-up .price .old-price {
@@ -223,7 +224,8 @@
   margin-left: 10px;
 }
 
-.sale-up .buy button {
+.sale-up  a {
+  text-decoration: none;
   padding: 10px 20px;
   width: 50%;
   text-transform: uppercase;
@@ -234,7 +236,7 @@
   border-radius: 30px;
 }
 
-.sale-up .buy button:hover {
+.sale-up  a:hover {
   background-color: var(--s-text);
   font-weight: 700;
 }
@@ -355,10 +357,10 @@
 
 .action a {
   text-decoration: none;
-  margin: 0 34%;
+  margin: 0 30%;
 }
 
-.action .content button {
+.action .content a {
   font-size: var(--font-size-5xl);
   color: var(--white);
   font-weight: 600;
@@ -366,7 +368,7 @@
   width: fit-content;
 }
 
-.action .content button:hover {
+.action .content a:hover {
   background-color: var(--s-text);
 }
 
@@ -390,7 +392,7 @@
     font-size: 13px;
     width: 100%;
   }
-  .header .content button {
+  .header .content a {
     padding: 15px 30px;
     font-size: var(--sparkling-subtit-size);
   }
@@ -501,7 +503,7 @@
   .sale-up .price {
     font-size: 14px;
   }
-  .sale-up .buy button {
+  .sale-up a {
     padding: 10px 10px;
     width: 100%;
     font-size: 12px;
@@ -567,9 +569,9 @@
     margin: 10px 0 20px;
   }
   .action a {
-    margin: 0 30%;
+    margin: 0 15%;
   }
-  .action .content button {
+  .action .content a {
     font-size: 16px;
   }
 }
