@@ -212,6 +212,7 @@
 }
 .sale-up .collection-list {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(4, 1fr);
 }
 .sale-up .image {
@@ -379,6 +380,7 @@
 .action .title {
   font-size: var(--font-size);
   font-weight: 700;
+  text-transform: none;
 }
 
 .action .discription {
@@ -404,16 +406,21 @@
 
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
+  .container {
+    width: 344px;
+  }
   .header {
     background-image: url("./image/Group 231 2.png");
-    background-size: 100% auto;
+    background-size: contain;
     background-position: top;
     height: 700px;
   }
+  .header .container {
+    align-items: flex-start;
+  }
   .header .content {
     width: 80%;
-    text-align: left;
-    transform: translate(0, 25%);
+    margin: 100px auto;
   }
   .header .title {
     font-size: var(--font-size-17xl);
@@ -427,7 +434,7 @@
     font-size: var(--sparkling-subtit-size);
   }
   .benefits {
-    margin: 0 5% 50px 5%;
+    margin: 0 0 50px;
   }
   .benefits .title {
     font-size: var(--font-size-5xl);
@@ -454,20 +461,17 @@
   }
   .time {
     background-image: url("./image/jeshoots-com-7VOyZ0-iO0o-unsplash 1.png");
-    /* background-size: 100%; */
     height: 324px;
     background-size: cover;
   }
-  .time .content {
-    transform: translate(0, 50%);
-  }
+
   .time .content .title {
     font-size: var(--font-size-5xl);
   }
   .time .box {
     width: 74px;
     height: 74px;
-    margin: 20px auto 0;
+    margin: 20px 5px;
   }
   .time .box .number {
     font-size: var(--font-size-5xl);
@@ -475,20 +479,25 @@
   .time .box .text {
     font-size: 12px;
   }
+  .time .content {
+    width: 100%;
+  }
   .write-holiday {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     height: fit-content;
   }
-  .write-holiday .image {
+  .write-holiday img {
     width: 100%;
-    height: fit-content;
   }
-  .write-holiday .image img {
+
+  .write-holiday .container {
     width: 100%;
   }
   .write-holiday .content {
-    padding: 5%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10%;
   }
   .write-holiday .discription {
     width: 100%;
@@ -496,14 +505,20 @@
   }
   .write-holiday .title {
     font-size: var(--font-size-5xl);
+    margin-bottom: 30px;
   }
   .sale-up {
-    padding: 0 5%;
+    margin: 0;
+    padding: 0;
   }
 
   .sale-up .sale {
     font-size: 14px;
     padding-top: 50px;
+  }
+
+  .sale-up .collection-list {
+    grid-template-columns: repeat(2, 1fr);
   }
   .sale-up .collection {
     font-size: var(--font-size-5xl);
@@ -511,7 +526,6 @@
   }
   .sale-up .product {
     width: 103px;
-    margin: 30px 15px 30px;
   }
   .sale-up .image img {
     width: 118.44px;
@@ -545,21 +559,23 @@
   }
   .testimonials .title {
     font-size: var(--font-size-5xl);
+    margin: 0 auto;
   }
   .testimonials .discription {
     font-size: 13px;
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
   }
+  .testimonials .author {
+    width: 100%;
+  }
   .testimonials .review .content {
-    max-width: 80%;
+    width: 90%;
     margin: auto auto;
     font-size: 12px;
     text-align: center;
     font-weight: 300;
-  }
-  .testimonials .author {
-    max-width: 80%;
+    margin-top: 20px;
   }
   .testimonials .review .name {
     font-size: var(--sparkling-subtit-size);
@@ -571,7 +587,11 @@
   .subscribe .title {
     font-size: var(--font-size-5xl);
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
+  }
+
+  .subscribe .form-subscribe {
+    margin:30px 0 0;
   }
   .subscribe .form-subscribe input {
     width: 50%;
@@ -586,12 +606,17 @@
     background-size: cover;
     height: 310px;
   }
+
+  .action .container {
+    align-items: flex-start;
+  }
   .action .content {
     text-align: center;
-    transform: translate(0, 25%);
+    margin: 20px auto;
+    width: 100%;
   }
   .action .title {
-    width: 80%;
+    width: 60%;
     font-size: var(--font-size-5xl);
     margin: auto;
   }
@@ -599,7 +624,9 @@
     margin: 10px 0 20px;
   }
   .action a {
-    margin: 0 15%;
+    margin: 0 auto;
+    display: inline-block;
+
   }
   .action .content a {
     font-size: 16px;
