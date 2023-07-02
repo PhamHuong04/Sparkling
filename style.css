@@ -1,17 +1,24 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
 .header {
   background-image: url("./image/Group 231A 1.png");
   background-repeat: no-repeat;
   position: relative;
   background-color: var(--s-red);
-  background-size: 1234px auto;
+  background-size: 80%;
   background-position: right;
   height: 900px;
   color: var(--s-yellow);
 }
+.header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .header .content {
-  margin-left: 10%;
-  width: 40%;
-  transform: translate(0, 50%);
+  width: 50%;
 }
 .header .title {
   text-transform: capitalize;
@@ -43,7 +50,7 @@
   color: var(--white);
 }
 .benefits {
-  margin: 0 10% 100px 10%;
+  margin: 100px 0;
 }
 
 .benefits .benefit-list {
@@ -56,14 +63,14 @@
   font-size: var(--font-size);
   font-weight: 700;
   text-align: center;
-  margin: 100px auto;
   font-family: var(--font);
+  margin-bottom: 50px;
 }
 
 .benefits .benefits1 {
   background-color: var(--s-yellow);
-  border-radius: 30px;
-  width: 370px;
+  border-radius: 50px;
+  width: 368px;
   height: 321px;
   display: flex;
   flex-direction: column;
@@ -87,9 +94,15 @@
   background-size: cover;
   height: 565px;
 }
+.time .container {
+  justify-content: center;
+}
 .time .content {
-  transform: translate(50%, 50%);
   color: var(--s-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .time .content .title {
   font-size: var(--font-size);
@@ -129,18 +142,28 @@
 }
 
 .write-holiday {
-  display: flex;
   height: 548px;
+  display: flex;
 }
-.write-holiday .image {
+.write-holiday img {
   width: 50%;
+  object-fit: cover;
+}
+
+.write-holiday .container {
+  color: var(--s-yellow);
+  background-color: var(--s-red);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .write-holiday .content {
-  background-color: var(--s-red);
-  padding: 10% 0 4% 10%;
-  color: var(--s-yellow);
+  width: 585px;
 }
+
 .write-holiday .title {
   font-weight: 700;
   font-size: var(--font-size);
@@ -150,7 +173,6 @@
 }
 
 .write-holiday .discription {
-  width: 60%;
   font-size: 18px;
 }
 
@@ -163,8 +185,7 @@
 .sale-up .sale {
   color: var(--s-text);
   font-size: var(--font-size-5xl);
-  padding-top: 100px;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
@@ -173,15 +194,15 @@
   font-weight: 700;
   color: var(--color-brown-100);
   font-family: var(--font);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .sale-up .product {
   width: 270px;
-  margin: 30px 15px 60px;
+  margin: 30px 15px 50px;
 }
 
 .sale-up .gifts {
-  margin: 70px 0 30px;
+  margin: 50px auto 20px;
 }
 .sale-up .gifts .title {
   font-size: var(--font-size-17xl);
@@ -190,9 +211,8 @@
   text-transform: uppercase;
 }
 .sale-up .collection-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .sale-up .image {
   height: 340px;
@@ -224,7 +244,7 @@
   margin-left: 10px;
 }
 
-.sale-up  a {
+.sale-up a {
   text-decoration: none;
   padding: 10px 20px;
   width: 50%;
@@ -236,7 +256,7 @@
   border-radius: 30px;
 }
 
-.sale-up  a:hover {
+.sale-up a:hover {
   background-color: var(--s-text);
   font-weight: 700;
 }
@@ -246,6 +266,9 @@
   background-image: url("./image/header-sparkling-09\ 1.png");
   background-size: cover;
   height: 565px;
+}
+.testimonials .container {
+  flex-direction: column;
 }
 
 .testimonials .title {
@@ -263,9 +286,12 @@
   width: 100%;
 }
 
+.testimonials .author {
+  width: 50%;
+}
 .testimonials .review .content {
-  max-width: 40%;
-  margin: 0 30% 30px;
+  width: 80%;
+  margin: 50px auto 20px;
   font-size: 14px;
 }
 
@@ -339,10 +365,15 @@
   height: 680px;
 }
 
+.action .container {
+  align-items: flex-start;
+}
+
 .action .content {
-  transform: translate(50%, 50%);
   color: var(--s-red);
-  margin-left: 10%;
+  width: 100%;
+  margin: 100px auto 0;
+  text-align: center;
 }
 
 .action .title {
@@ -357,7 +388,6 @@
 
 .action a {
   text-decoration: none;
-  margin: 0 30%;
 }
 
 .action .content a {
